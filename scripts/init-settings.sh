@@ -1,10 +1,16 @@
 #!/bin/bash
 
-#更改默认地址为192.168.8.1
-sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
+#更改默认地址为192.168.1.1  IP地址不变
+# sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # 给config下的文件增加权限
 chmod 644 files/etc/config/*
+
+
+
+
+exit 0
+# #################  以下代码不执行
 
 
 echo "开始处理 homeproxy 规则和 DNS 配置..."
